@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.title{
+    margin: 1rem;
+}
+.progress-bar{
+    width: 100%;
+    height: 50px;
+    border: 3px solid gray;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.inner-rectangle{
+    padding: 1rem;
+    width: 25%;
+    height: 40px;
+    background-color: gray;
+    border-radius: 5px;
+    margin-left: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.number-of-card-played{
+    padding: 1rem;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    min-width: 500px;
+    width: 100%;
+    height: auto;
+    border: 3px solid gray;
+    border-radius: 10px;
+    margin-top: 5px;
+    flex-direction: column;
+    padding: 3px;
+}
+.flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flashcard{
+    width: 100%;
+    height: 250px;
+    background-color: #f2f2f2f2;
+    border-radius: 5px;
+    padding: 1rem;
+}
+.front-text, .back-text{
+    font-weight: bold;
+}
+.inputs{
+    position: relative;
+    width: 100%;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    padding: 1rem;
+    background-color: #f2f2f2f2;
+    border-radius: 5px;
+}
+.previous, .show-answer, .next{
+    position: absolute;
+    background-color: #f2f2f2f2;
+}
+.previous{
+    left: 5px;
+    top: 25%;
+}
+.show-answer{
+    left: 42%;
+    top: 25%;
+}
+.next{
+    right: 5px;
+    top: 25%;
+}
+button{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.back-text{
+    display: none;
+}
