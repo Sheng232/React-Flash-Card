@@ -8,6 +8,7 @@ function Flashcard(props) {
     const flipAnimation = {
         animation: "flip 0.5s ease",
     };
+
     const leftFadeAnimation = {
         animation: "fadeLeft 0.5s ease forwards",
     };
@@ -50,7 +51,7 @@ function Flashcard(props) {
                 <button className="previous" 
                     onClick={cardFadeRight}
                     >
-                        Previous
+                        {` < Previous`}
                 </button>
 
                 <button className="show-answer" onClick={flipCard}>
@@ -61,7 +62,7 @@ function Flashcard(props) {
                     className="next"
                     onClick={cardFadeLeft} 
                 >
-                    Next
+                    {`Next >`}
                 </button>
             </div>
         </div>

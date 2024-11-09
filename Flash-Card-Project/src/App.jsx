@@ -3,7 +3,7 @@ import Topbar from "./components/Topbar"
 import Flashcard from "../src/components/Flashcard"
 import cards from "../src/assets/cards"
 import Sidebar from "../src/components/Sidebar"
-
+import CreateCard from './components/CreateCard/CreateCard'
 
 function App() {
   const [isActive, setIsActive] = useState(1);
@@ -49,6 +49,7 @@ function App() {
         activeCard = {isActive}
       />
       {displayCard}
+      <CreateCard />
     </>
   )
 }
