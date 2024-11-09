@@ -1,18 +1,24 @@
 import { useState } from 'react'
-import Navbar from "../src/components/Navbar"
+import Topbar from "./components/Topbar"
 import Flashcard from "../src/components/Flashcard"
 import cards from "../src/assets/cards"
+import Sidebar from "../src/components/Sidebar"
+
+
 function App() {
   const [isActive, setIsActive] = useState(1);
+
   function nextCard(){
     if(isActive === cards.length){
       setIsActive(1);
-      console.log(isActive);
     }
     else{
       setIsActive(isActive + 1);
     }
   }
+
+
+
   function previousCard(){
     if(isActive === 1){
       setIsActive(cards.length)
@@ -34,11 +40,14 @@ function App() {
             />
             
     });
-    console.log(isActive);
   
   return (
     <>
-      <Navbar/>
+      <Sidebar />
+      <Topbar
+        length={cards.length}
+        activeCard = {isActive}
+      />
       {displayCard}
     </>
   )
