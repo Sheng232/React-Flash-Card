@@ -1,5 +1,5 @@
 
-function Navbar(){
+function Navbar(props){
     return(
         <>
             <h1 className="title">Flash Cards</h1>
