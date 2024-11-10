@@ -1,7 +1,7 @@
 
 function Topbar(props){
     const innerRectangleLength = {
-        width: `${((props.activeCard-1)/props.length)*100}%`
+        width: `${((props.activeCard)/props.length)*100}%`
     };
     return(
         <>

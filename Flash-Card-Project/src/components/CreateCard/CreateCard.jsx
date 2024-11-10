@@ -1,6 +1,8 @@
 import "./CreateCard.css"
 import CardInput from "./CardInput"
 import {useState, useEffect} from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 function CreateCard(props){
 
     const [childComponentCard, setComponentChildCard] = useState(props.deck);
@@ -39,6 +41,8 @@ function CreateCard(props){
     return(
         <>
             <h1 className="title center"> Edit existing flashcard set</h1>
+            <FontAwesomeIcon icon={faCaretDown} />
+            
             <form>
                 {/*to  be implemented */}
                 {/* <label className="title-label" htmlFor = "title">Flashcard Title</label>
