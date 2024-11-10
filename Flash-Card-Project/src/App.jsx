@@ -39,6 +39,7 @@ function App() {
       ])
     })
   }
+  
   function previousCard(){
     if(isActive === 1){
       setIsActive(deck.length)
